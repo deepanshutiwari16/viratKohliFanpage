@@ -6,19 +6,33 @@
       * {
         margin: 0px;
         padding: 0px;
+        font-family: sans-serif;
+      }
+
+      table {
+        margin: 1px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+      }
+
+      body {
+        margin-inline: 200px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
       }
 
       .nav-links {
         font-size: 20px;
         text-decoration: none;
-        color: rgb(64, 1, 255);
+        color: rgb(34, 34, 34);
         margin-inline: 10px;
       }
 
+      nav {
+        padding-top: 10px;
+      }
       article {
         border: 2px solid white;
         padding: 10px;
-        box-shadow: 2px 5px 3px grey;
+        padding-bottom: 28px;
       }
 
       .personal-info {
@@ -28,11 +42,28 @@
         padding: 5px 10px;
       }
 
+      .personal-info-row {
+        background-color: #dddddd;
+        padding: 5px 10px;
+        font-weight: 600;
+      }
+
       .carrier-summary {
         border: 2px solid rgb(0, 0, 0);
         border-collapse: collapse;
         text-align: start;
         padding: 5px 10px;
+      }
+
+      .carrier-summary th {
+        background-color: #dddddd;
+      }
+
+      header {
+        border-bottom: 2px solid black;
+        margin-block: 20px;
+        padding-bottom: 60px;
+        background-color: white;
       }
 
       h2 {
@@ -41,32 +72,30 @@
 
       img {
         float: left;
-        height: 430px;
+        height: 434px;
+      }
+
+      ul {
+        margin-left: 30px;
       }
     </style>
   </head>
 
-  <body style="margin-inline: 200px">
-    <header
-      style="
-        border-bottom: 2px solid black;
-        margin-block: 20px;
-        padding-bottom: 60px;
-      "
-    >
+  <body>
+    <header>
       <h1 style="text-align: center; float: left">
         Virat Kohli – Passion, Power, Perfection
       </h1>
 
       <nav style="float: right">
-        <a class="nav-links" href="">Home</a>
-        <a class="nav-links" href="">Gallery</a>
-        <a class="nav-links" href="">Innings</a>
+        <a class="nav-links" href="#">Home</a>
+        <a class="nav-links" href="#">Gallery</a>
+        <a class="nav-links" href="#">Innings</a>
       </nav>
     </header>
 
     <article>
-      <h2>Virat Kohli</h2>
+      <h2 id="article-heading">Virat Kohli</h2>
       <img
         src="https://wallpapercave.com/wp/wp13044610.jpg"
         alt="virat kohli"
@@ -74,32 +103,32 @@
       />
 
       <section style="margin-left: 350px; margin-bottom: 20px">
-        <h2>Personal Information</h2>
+        <h3 class="">Personal Information</h3>
 
         <table class="personal-info">
           <thead>
             <tr class="personal-info">
-              <th class="personal-info">Born</th>
+              <td class="personal-info-row">Born</td>
               <td class="personal-info">November 05, 1988 (36 years)</td>
             </tr>
             <tr class="personal-info">
-              <th class="personal-info">Birth Place</th>
+              <td class="personal-info-row">Birth Place</td>
               <td class="personal-info">Delhi</td>
             </tr>
             <tr class="personal-info">
-              <th class="personal-info">Height</th>
+              <td class="personal-info-row">Height</td>
               <td class="personal-info">5 ft 9 in (175 cm)</td>
             </tr>
             <tr class="personal-info">
-              <th class="personal-info">Role</th>
+              <td class="personal-info-row">Role</td>
               <td class="personal-info">Batsman</td>
             </tr>
             <tr class="personal-info">
-              <th class="personal-info">Batting Style</th>
+              <td class="personal-info-row">Batting Style</td>
               <td class="personal-info">Right Handed Bat</td>
             </tr>
             <tr class="personal-info">
-              <th class="personal-info">Bowling Style</th>
+              <td class="personal-info-row">Bowling Style</td>
               <td class="personal-info">Right-arm medium</td>
             </tr>
           </thead>
@@ -107,7 +136,7 @@
       </section>
 
       <section style="margin-left: 350px">
-        <h2>Batting Carrier Summary</h2>
+        <h3>Batting Career Summary</h3>
         <table class="carrier-summary">
           <thead>
             <tr class="carrier-summary">
